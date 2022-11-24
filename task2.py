@@ -9,6 +9,7 @@ if not con.open():
 
 query = QSqlQuery()
 query.exec('select name, job, email from contacts')
+
 query.first()
 print([query.value(i) for i in range(3)])
 
